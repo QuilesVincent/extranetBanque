@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-    <html lang="fr">
-        <head>
-            <title>Inscription/connexion</title>
-            <meta charset='utf-8'>
+
             <link href='public/css/newPassword.css' rel='stylesheet'>
             <link href="public/css/footerGeneral.css" rel="stylesheet">
             <!--Ajouter des polices google pour rendre le tout plus jolie-->

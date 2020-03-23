@@ -16,9 +16,7 @@ if(isset($_GET['actor'])){
 
 
 ?>
-<!Doctype HTML>
-    <html lang="fr">
-        <head>
+
             <link href="public/css/paramUser.css" rel="stylesheet">
             <link href="public/css/footerGeneral.css" rel="stylesheet">
         </head>

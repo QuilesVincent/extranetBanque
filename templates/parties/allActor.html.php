@@ -10,13 +10,6 @@ if(isset($result)){
 }
 
 ?>
-
-<!DOCTYPE html>
-    <html lang="fr">
-        <head>
-            <title>Accueil</title>
-            <meta charset='utf-8'>
-            <meta content="width=device-width, initial-scale=1.0" name="viewport">
             <link href='public/css/headerAccueil&Acteur.css' rel='stylesheet'>
             <link href='public/css/accueil.css' rel='stylesheet'>
             <link href="public/css/footerGeneral.css" rel="stylesheet">

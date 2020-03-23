@@ -5,14 +5,6 @@ $idUser = $_GET['user'];
 session_start();
 
 ?>
-
-
-
-<!DOCTYPE html>
-    <html>
-        <head>
-            <title>Comment Actor</title>
-            <meta charset='utf-8'>
             <link href='public/css/headerAccueil&Acteur.css' rel='stylesheet'>
             <link href='public/css/newCom.css' rel='stylesheet'><!--Faire fichier css-->
             <link href="public/css/footerGeneral.css" rel="stylesheet">

@@ -16,7 +16,7 @@ class User extends \Controllers\Controller
         //if post inscription check if all field aren't empty ; if empty redirect accueil with notation field is empty
         if(isset($_POST['submitInscription'])){
             if (empty($_POST['lastNameInscription']) || empty($_POST['firstNameInscription']) || empty($_POST['userNameInscription']) || empty($_POST['passwordInscription']) || empty($_POST['secretQuestion']) || empty($_POST['answerSecretQuestion'])) {
-                Http::redirect('index.php?fieldR=y');
+                \Http::redirect('index.php?fieldR=y');
             }
             //check userName is free ? adding : redirect with notation userName no free
             $verif = $this->model->find($_POST['userNameInscription'], 'userName');
@@ -24,7 +24,7 @@ class User extends \Controllers\Controller
                 $add = $this->model->addUser($_POST['lastNameInscription'], $_POST['firstNameInscription'], $_POST['userNameInscription'], $_POST['passwordInscription'], $_POST['secretQuestion'], $_POST['answerSecretQuestion']);
                 $result = $this->model->getUser($_POST['userNameInscription'], $_POST['passwordInscription']);
             } else {
-                Http::redirect('index.php?userName=no');
+                \Http::redirect('index.php?userName=no');
             }
             //if connexion, check with user post connexion
         } elseif(isset($_POST['submitConnexion'])) {

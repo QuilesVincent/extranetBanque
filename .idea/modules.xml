@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../ProjetPHPOPC/.idea/ProjetPHPOPC.iml" filepath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/ProjetPHPOPC.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/ProjetPHPOPCAmeliorationClass.iml" filepath="$PROJECT_DIR$/.idea/ProjetPHPOPCAmeliorationClass.iml" />
     </modules>
   </component>

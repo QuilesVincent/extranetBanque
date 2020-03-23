@@ -17,12 +17,6 @@ if(isset($_GET['like'])){
 };
 ?>
 
-
-<!DOCTYPE html>
-    <html lang="fr">
-        <head>
-            <title>Acteur</title>
-            <meta charset='utf-8'>
             <link href='public/css/headerAccueil&Acteur.css' rel='stylesheet'>
             <link href='public/css/acteur.css' rel='stylesheet'>
             <link href="public/css/footerGeneral.css" rel="stylesheet">

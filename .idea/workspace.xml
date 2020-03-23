@@ -1,38 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15641808-cd93-4a0b-8e48-d79783021e29" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPC/partie_3_actor/returnDislikeActor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPC/public/logo/compte.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPC/public/logo/comptePerso.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPC/public/logo/computer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPC/public/logo/dislike.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPC/public/logo/gbafMiniatureSmartphone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPC/public/logo/like.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/ProjetPHPOPC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/ProjetPHPOPC.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/controller/controleur.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/controller/controleur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/model/ActorManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/model/ActorManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/model/AlimentManager.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/model/CommentManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/model/CommentManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/model/LikeManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/model/LikeManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/model/PlatManager.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/model/UserManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/model/UserManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/multiPage/headerAccueil&amp;Acteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/multiPage/headerAccueil&amp;Acteur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/multiPage/paramUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/multiPage/paramUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/partie_2_accueil/accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/partie_2_accueil/accueil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/partie_2_accueil/divActeurInAccueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/partie_2_accueil/divActeurInAccueil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/partie_3_actor/acteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/partie_3_actor/acteur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/partie_3_actor/commentInsertion.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/partie_3_actor/commentInsertion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/partie_3_actor/likePost.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/partie_3_actor/likePost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/partie_3_actor/newCom.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/partie_3_actor/newCom.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/partie_3_actor/newComPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/partie_3_actor/newComPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/public/css/accueil.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/public/css/accueil.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/public/css/acteur.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/public/css/acteur.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/public/css/headerAccueil&amp;Acteur.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/public/css/headerAccueil&amp;Acteur.css" afterDir="false" />
+    <list default="true" id="15641808-cd93-4a0b-8e48-d79783021e29" name="Default Changelist" comment="apport du fichier sql">
+      <change beforePath="$PROJECT_DIR$/.idea/ProjetPHPOPCAmeliorationClass.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ProjetPHPOPCAmeliorationClass.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/controllers/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/controllers/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/parties/actorSelected.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/parties/actorSelected.html.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/parties/allActor.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/parties/allActor.html.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/parties/newCom.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/parties/newCom.html.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/parties/newPassword.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/parties/newPassword.html.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/parties/paramUser.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/parties/paramUser.html.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,11 +23,25 @@
       <executable />
     </execution>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="ProjetPHPOPCAmeliorationClass" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../ProjetPHPOPC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Z2G4qA4vrofKfTg6rcpOzNbcKB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -60,7 +53,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProjetPHPOPC" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -111,13 +104,59 @@
       <workItem from="1584600765342" duration="12348000" />
       <workItem from="1584616756395" duration="1564000" />
       <workItem from="1584701014185" duration="3065000" />
+      <workItem from="1584962124884" duration="2092000" />
+      <workItem from="1584970729533" duration="1066000" />
     </task>
+    <task id="LOCAL-00001" summary="Modification gitinore">
+      <created>1584962330516</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584962330517</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Modification db.php">
+      <created>1584963253348</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584963253348</updated>
+    </task>
+    <task id="LOCAL-00003" summary="apport du fichier sql">
+      <created>1584963634844</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584963634844</updated>
+    </task>
+    <task id="LOCAL-00004" summary="modification README.md">
+      <created>1584971200762</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584971200762</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Modification gitinore" />
+    <MESSAGE value="Modification db.php" />
+    <MESSAGE value="apport du fichier sql" />
+    <MESSAGE value="modification README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="modification README.md" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="392" y="109" key="#SQL_Dialects" timestamp="1584963298159">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="392" y="109" key="#SQL_Dialects/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1584963298159" />
+    <state x="392" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584963660703">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="392" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1584963660703" />
     <state x="554" y="82" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1584516246969">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -130,11 +169,19 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="580" y="377" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1584540841510" />
+    <state x="425" y="45" key="CommitChangelistDialog2" timestamp="1584971196082">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="425" y="45" key="CommitChangelistDialog2/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1584971196082" />
     <state x="580" y="206" key="FileChooserDialogImpl" timestamp="1584701120201">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="580" y="206" key="FileChooserDialogImpl/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1584616549021" />
     <state x="580" y="206" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1584701120201" />
+    <state x="634" y="350" width="356" height="200" key="Github.CreateGistDialog" timestamp="1584962246087">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="634" y="350" width="356" height="200" key="Github.CreateGistDialog/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1584962246087" />
     <state x="543" y="265" key="NewPhpClassDialog" timestamp="1584611386270">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -154,10 +201,10 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1584534741564" />
-    <state x="496" y="275" key="com.intellij.ide.util.TipDialog" timestamp="1584701018844">
+    <state x="496" y="275" key="com.intellij.ide.util.TipDialog" timestamp="1584970739832">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="496" y="275" key="com.intellij.ide.util.TipDialog/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1584616756348" />
+    <state x="496" y="275" key="com.intellij.ide.util.TipDialog/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1584970739832" />
     <state x="496" y="275" key="com.intellij.ide.util.TipDialog/0.0.1600.900@0.0.1600.900" timestamp="1584701018844" />
     <state x="541" y="93" key="refactoring.ChangeSignatureDialog" timestamp="1584186684328">
       <screen x="0" y="0" width="1600" height="900" />
@@ -167,5 +214,9 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="456" y="205" key="run.anything.popup/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1584609808966" />
+    <state x="522" y="363" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1584962178571">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="522" y="363" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1584962178571" />
   </component>
 </project>
