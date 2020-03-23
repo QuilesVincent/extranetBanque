@@ -1,34 +1,34 @@
  /*Partie présentation acteur avec logo et texte de présentation*/
-.actorLogo{
+.actorLogo {
     margin: auto;
     border: 1px solid black;
     width : 30%;
 }
-.actorLogo img{
+.actorLogo img {
     width : 100%;
 }
 /*Partie comment et like*/
-.commentHeader{
+.commentHeader {
     display: flex;
     margin-bottom: 1%;
 }
-.titleHeaderComment{
+.titleHeaderComment {
     width: 40%;
 }
-.titleHeaderComment h1{
+.titleHeaderComment h1 {
     margin-top: 1%;
     margin-left: 3%;
 }
-.buttonLien{
+.buttonLien {
     width: 60%;
     display: flex;
     justify-content: flex-end;
 }
 
-.lienNewCom, .divFormPostLike{
+.lienNewCom, .divFormPostLike {
     margin-top: 1%;
 }
-.aLienNewCom{
+.aLienNewCom {
     border: 1px solid grey;
     border-radius: 8px;
     background-color: #e7e7e7;
@@ -36,46 +36,43 @@
     width: 90%;
     height: 80%;
 }
-.lienNewCom a{
+.lienNewCom a {
     text-decoration: none;
     color : black;
     
 }
-.divFormPostLike{
+.divFormPostLike {
     margin-left: 1%;
     margin-right: 3%;
 }
-.formPostLike{
+.formPostLike {
     padding: 0;
     margin: 0;
     height: 80%;
 }
-.submitLikePost{
+.submitLikePost {
     height: 100%;
     border: 1px solid grey;
     border-radius: 8px;
     background-color: #e7e7e7;
 }
-
-
-
-.divSectionComment{
+.divSectionComment {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
-.comment{
+.comment {
     width: 80%;
     border: 1px solid grey;
     border-radius: 5px;
     display: flex;
     margin-bottom: 1%;
 }
-.infoUserComment{
+.infoUserComment {
     width: 15%;
 }
-.contentComment{
+.contentComment {
     width: 85%;
 }
 
@@ -84,3 +81,16 @@
 .msgAdvertissement{
     text-align:center;
 }
+
+ @media all and (max-width: 680px){
+     .comment {
+         flex-direction: column;
+     }
+     .infoUserComment {
+         width: 80%;
+     }
+     contentComment {
+         width: 100%;
+     }
+
+ }
