@@ -23,7 +23,7 @@ if(isset($result)){
 
             <section class='sectionGBAF'>
                 <div class='textGBAFPres'>
-                    <h1>Le GBAF <?= $_SESSION['userName']?></h1>
+                    <h1>Le GBAF</h1>
                     <p>Le GBAF est donc une entité commerciale balablabalbalablabalbalblabalabalalbalablabalablablababablba balablabalbalablabalbalblabalabalalbalablabalablablababablba balablabalbalablabalbalblabalabalalbalablabalablablababablba
                         balablabalbalablabalbalblabalabalalbalablabalablablababablba balablabalbalablabalbalblabalabalalbalablabalablablababablba balablabalbalablabalbalblabalabalalbalablabalablablababablba
                     </p>

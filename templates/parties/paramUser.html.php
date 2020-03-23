@@ -22,7 +22,7 @@ if(isset($_GET['actor'])){
         </head>
         <body>
             <header class='principalHeader'>
-                <h1>Page de changement d'information de votre compte perso <?= $idUserSafe;?></h1>
+                <h1>Page de changement d'information de votre compte perso</h1>
                 <p>Le monde de la finance s'ouvre bientôt à vous</p>
                 <a href=<?= $road;?>>Retour à la page précédente</a>
             </header>
