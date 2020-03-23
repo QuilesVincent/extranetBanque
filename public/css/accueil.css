@@ -1,0 +1,96 @@
+/*Partie présentation du GBAF*/
+
+.imageGBAFPresentationDiv{
+    display: flex;
+    flex-direction: row;
+}
+.imgGBAFPres{
+    margin: auto;
+    height: 250px;
+    width: 350px;
+}
+/*Partie acteur*/
+.partie2Acteur{
+    display: flex;
+    flex-direction: column;
+}
+.partieActeurDiv{
+    border: 1px solid grey;
+    border-radius : 5px;
+    margin-top: 1%;
+    display: flex;
+    background-color : rgba(111,111,111,0.250);
+}
+.partieGaucheLogo{
+    width: 23%;
+    margin-left: 1%;
+}
+.partieGaucheLogo img{
+    width: 80%;
+    height: 65%;
+    margin-top: 6%;
+}
+.partieDroitePres{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    width: 77%;
+}
+.contentLien{
+    width: 13%;
+    align-self: flex-end;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+.partieDroitePres p{
+    margin-top:0;
+}
+.lienActeur{
+    display: block;
+    width: 100%;
+    border: 1px solid rgba(138, 138, 138, 0.822);
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: rgba(145, 142, 142, 0.822);
+    color: black;
+    text-align: center;
+}
+
+@media all and (min-width: 680px) and (max-width: 980px){
+    .textGBAFPres p, .partie1Acteur p{
+        text-align: center;
+        margin: auto;
+        width: 80%;
+    }
+    .contentLien{
+        width: 16%;
+    }
+}
+@media all and (max-width: 680px){
+    .textGBAFPres p, .partie1Acteur p{
+        text-align: center;
+        margin: auto;
+        width: 80%;
+    }
+    .partieActeurDiv{
+        display: flex;
+        flex-direction: column;
+    }
+    .partieGaucheLogo{
+        width : 95%;
+        margin: auto;
+    }
+    .partieGaucheLogo img{
+        width: 100%;
+        border: 1px solid green;
+    }
+    .partieDroitePres{
+        width: 95%;
+        margin: auto;
+    }
+    .contentLien{
+        width: 20%;
+    }
+
+
+}

@@ -1,0 +1,101 @@
+.headerMultiPage{
+    height: 130px;
+}
+.containHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoHeader{
+    margin-left: 1%;
+}
+.img{
+    background: url("../logo/gbafMiniature.png") no-repeat;
+    width: 76px;
+    height: 97px;
+}
+.infoUser{
+    margin-right: 2%;
+    display: flex;
+    width: 15%;
+}
+.formDecoParam{
+    position: relative;
+    left: 85%;
+    width: 15%;
+}
+.infoUser p, nav{
+    margin-top: 5%;
+}
+.menuDeroulant > a{
+}
+nav *{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    margin-left: 10%;
+}
+
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    text-align: center;
+    position: relative;
+}
+nav ul:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    width: 100%;
+}
+nav a:hover{
+    color: orange;
+    border-bottom: 2px solid gold;
+}
+.sousMenuDeroulant{
+    display: none;
+    box-shadow: 0px 1px 2px #ccc;
+    position: absolute;
+    z-index: 1000;
+}
+nav > ul li:hover .sousMenuDeroulant{
+    display: block;
+}
+.sousMenuDeroulant li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sousMenuDeroulant a{
+    padding-bottom: 5px;
+    border-bottom: none;
+}
+.sousMenuDeroulant a:hover{
+    border-bottom: none;
+    background: rgba(200,200,200,0.1);
+}
+
+@media all and (max-width: 680px) {
+    .containHeader{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .infoUser{
+        width: 30%;
+    }
+    .img{
+        background: url("../logo/gbafMiniatureSmartphone.png") no-repeat;
+        width: 100px;
+        height: 80px;
+    }
+
+}

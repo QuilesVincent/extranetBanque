@@ -1,0 +1,86 @@
+ /*Partie présentation acteur avec logo et texte de présentation*/
+.actorLogo{
+    margin: auto;
+    border: 1px solid black;
+    width : 30%;
+}
+.actorLogo img{
+    width : 100%;
+}
+/*Partie comment et like*/
+.commentHeader{
+    display: flex;
+    margin-bottom: 1%;
+}
+.titleHeaderComment{
+    width: 40%;
+}
+.titleHeaderComment h1{
+    margin-top: 1%;
+    margin-left: 3%;
+}
+.buttonLien{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.lienNewCom, .divFormPostLike{
+    margin-top: 1%;
+}
+.aLienNewCom{
+    border: 1px solid grey;
+    border-radius: 8px;
+    background-color: #e7e7e7;
+    text-align: center;
+    width: 90%;
+    height: 80%;
+}
+.lienNewCom a{
+    text-decoration: none;
+    color : black;
+    
+}
+.divFormPostLike{
+    margin-left: 1%;
+    margin-right: 3%;
+}
+.formPostLike{
+    padding: 0;
+    margin: 0;
+    height: 80%;
+}
+.submitLikePost{
+    height: 100%;
+    border: 1px solid grey;
+    border-radius: 8px;
+    background-color: #e7e7e7;
+}
+
+
+
+.divSectionComment{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.comment{
+    width: 80%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: flex;
+    margin-bottom: 1%;
+}
+.infoUserComment{
+    width: 15%;
+}
+.contentComment{
+    width: 85%;
+}
+
+/*If error get like or dislike*/
+
+.msgAdvertissement{
+    text-align:center;
+}

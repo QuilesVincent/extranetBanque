@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/*Partie header avec logo gbaf + formulaire de connexion*/
+header{
+    display: flex;
+}
+.titleName{
+    width: 40%;
+    text-align: center;
+}
+.connexionFormContent{
+    width : 60%;
+    display: flex;
+}
+.connexionForm{
+    display: flex;
+    width: 100%;
+}
+.mailConnexionContent, .passwordConnexionContent, .buttonConnexionContent{
+    display: flex;
+    flex-direction: column;
+    margin : 10px 0 0 30px;
+}
+.buttonConnexionContent{
+    margin-top: 28px;
+}
+.buttonConnexionContent input{
+    background-color: rgb(92, 91, 196);
+    border:none;
+    font-size: 15px;
+    color: white;
+}
+
+/*
+Partie principale, léger descriptif texte à gauche et formulaire d'inscription à droite de la page
+*/
+
+.inscriptionSection{
+    display: flex;
+    background-color: rgba(230, 230, 230, 0.815);
+}
+.partieEsthetique{
+    width: 53%;
+}
+.partieEsthetiqueContent{
+    margin: 5% 15% 0 25%;
+}
+.informationInscription{
+    width: 47%;
+}
+.inscriptionFormContent{
+    display: flex;
+    flex-direction: column;
+}
+.passwordInscription, .secretQuestion, .submitInscription, .userNameInscriptionContent{
+    margin-top : 25px;
+}
+.answerSecretQuestionContent{
+    margin-top: 10px;
+}
+.userNameInscription, .answerSecretQuestion{
+    width: 100%;
+}
+.inscriptionFormContent input, .inscriptionFormContent select, .submitInscription{
+    height: 45px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.passwordInscription,.userNameInscriptionContent, .secretQuestion, .answerSecretQuestionContent, .firstLastNameContent, .titleInscription, .submitInscription{
+    width: 52%;
+}
+.firstLastNameContent{
+    display: flex;
+    justify-content: space-between;
+}
+.firstLastNameContent input{
+    width: 48%;
+}
+.submitInscription{
+    width: 35%;
+    background-color: rgb(64, 211, 72);
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+.msgAdvertissementMiss{
+    padding: 0;
+    margin: 0;
+    color: red;
+}
+
+

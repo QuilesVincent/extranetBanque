@@ -1,0 +1,80 @@
+body{
+    height: 800px;
+    background-color: rgba(230, 230, 230, 0.815);
+}
+/*title who define the goal of the page*/
+header{
+
+    text-align: center;
+    margin-bottom: 2%;
+}
+/*Form at the page's center*/
+h2{
+    text-align: center;
+}
+.divForm{
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    height: 450px;
+    margin: auto;
+    border: 1px solid grey;
+}
+form{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+}
+.firstLastNameContent, .userNameChangeUserContent, .passwordUserContent, .secretQuestionContent, .secretQuestionAnswerContent{
+    width: 50%;
+    height: 15%;/*Comprendre pourquoi cette hauteur précise*/
+}
+.firstLastNameContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.inputForm{ /*Pourquoi l'input select n'est pas à la même taille*/
+    width: 99%;
+    border-radius: 5px;
+}
+form > div > input, form > div > select{
+    width: 100%;
+    height: 70%;
+    border-radius: 5px;
+}
+.firstLastNameContent input{
+    width: 46%;
+}
+.submitDiv{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid black;
+    background-color: rgba(230, 230, 230, 0.815);
+}
+
+.submitDiv a, .submitDiv button{
+    height: 30%; /*Comprendre pourquoi button et a pas la même hauteur malgrès ce css*/
+}
+.submitDiv button{
+    margin-right: 1%;
+    color: white;
+    background-color: darkblue;
+    border: 2px solid darkblue;
+    border-radius: 3px;
+}
+.submitDiv a{
+    margin-right: 3%;
+    text-decoration: none;
+    border: 2px solid rgba(178,178,178, 0.4);
+    border-radius: 3px;
+    background-color: rgba(178,178,178, 0.4);
+    color: black;
+}
+.errTitle{
+    text-align:center;
+}
+

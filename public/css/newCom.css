@@ -1,0 +1,33 @@
+body{
+    height: 800px;
+    background-color: rgba(230, 230, 230, 0.815);
+}
+/*comment form at the page's center*/
+.divForm{
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    height: 450px;
+    margin: auto;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    padding-top: 6%;
+    margin-bottom: 4%;
+}
+form{
+    height: 80%;
+}
+textarea{
+    height: 80%;
+    width: 30%;
+}
+
+.divContentComment{
+    height: 40%;
+}
+.submitCom{
+    width: 75px;
+    background-color: deepskyblue;
+    border: deepskyblue;
+}
