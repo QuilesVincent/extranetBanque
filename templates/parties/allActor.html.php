@@ -1,6 +1,5 @@
 <?php
 
-//$idUser = $_GET['user'];
 session_start();
 if(isset($result)){
     $_SESSION['userName'] = $result['userName'];

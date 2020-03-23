@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15641808-cd93-4a0b-8e48-d79783021e29" name="Default Changelist" comment="apport du fichier sql">
-      <change beforePath="$PROJECT_DIR$/.idea/ProjetPHPOPCAmeliorationClass.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ProjetPHPOPCAmeliorationClass.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="15641808-cd93-4a0b-8e48-d79783021e29" name="Default Changelist" comment="few correction">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/controllers/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/controllers/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/parties/actorSelected.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/parties/actorSelected.html.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/controllers/Actor.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/controllers/Actor.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/parties/allActor.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/parties/allActor.html.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/parties/newCom.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/parties/newCom.html.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/parties/newPassword.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/parties/newPassword.html.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/parties/paramUser.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/parties/paramUser.html.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +98,8 @@
       <workItem from="1584616756395" duration="1564000" />
       <workItem from="1584701014185" duration="3065000" />
       <workItem from="1584962124884" duration="2092000" />
-      <workItem from="1584970729533" duration="1066000" />
+      <workItem from="1584970729533" duration="1217000" />
+      <workItem from="1584972177164" duration="440000" />
     </task>
     <task id="LOCAL-00001" summary="Modification gitinore">
       <created>1584962330516</created>
@@ -135,7 +129,21 @@
       <option name="project" value="LOCAL" />
       <updated>1584971200762</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="few correction">
+      <created>1584971921436</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1584971921436</updated>
+    </task>
+    <task id="LOCAL-00006" summary="few correction">
+      <created>1584972576780</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1584972576780</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,7 +154,8 @@
     <MESSAGE value="Modification db.php" />
     <MESSAGE value="apport du fichier sql" />
     <MESSAGE value="modification README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="modification README.md" />
+    <MESSAGE value="few correction" />
+    <option name="LAST_COMMIT_MESSAGE" value="few correction" />
   </component>
   <component name="WindowStateProjectService">
     <state x="392" y="109" key="#SQL_Dialects" timestamp="1584963298159">
@@ -169,10 +178,10 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="580" y="377" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1584540841510" />
-    <state x="425" y="45" key="CommitChangelistDialog2" timestamp="1584971196082">
+    <state x="425" y="45" key="CommitChangelistDialog2" timestamp="1584972571388">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="425" y="45" key="CommitChangelistDialog2/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1584971196082" />
+    <state x="425" y="45" key="CommitChangelistDialog2/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1584972571388" />
     <state x="580" y="206" key="FileChooserDialogImpl" timestamp="1584701120201">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -201,10 +210,10 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1584534741564" />
-    <state x="496" y="275" key="com.intellij.ide.util.TipDialog" timestamp="1584970739832">
+    <state x="496" y="275" key="com.intellij.ide.util.TipDialog" timestamp="1584972181401">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="496" y="275" key="com.intellij.ide.util.TipDialog/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1584970739832" />
+    <state x="496" y="275" key="com.intellij.ide.util.TipDialog/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1584972181401" />
     <state x="496" y="275" key="com.intellij.ide.util.TipDialog/0.0.1600.900@0.0.1600.900" timestamp="1584701018844" />
     <state x="541" y="93" key="refactoring.ChangeSignatureDialog" timestamp="1584186684328">
       <screen x="0" y="0" width="1600" height="900" />
