@@ -19,7 +19,7 @@ if(isset($_GET["actor"])){
                 <p><?php echo htmlspecialchars($_SESSION['lastName']). ' & ' .htmlspecialchars($_SESSION['firstName']);?></p>
             <nav>
                 <ul>
-                    <li class="menuDeroulant"><img src="public/logo/compte.png">
+                    <li class="menuDeroulant"><img src="image/logo/compte.png">
                         <ul class="sousMenuDeroulant">
                             <li><a href="index.php?controllers=afficheur&task=afficheChangeDonneUser&user=<?= $idUserSafe;?><?= isset($idActor) ? "&actor=" .$idActor : false;?>">Paramètres de compte</a></li>
                             <li><a href="index.php?controllers=user&task=logOut">Deconnexion</a></li>

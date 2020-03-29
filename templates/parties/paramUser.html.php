@@ -17,8 +17,8 @@ if(isset($_GET['actor'])){
 
 ?>
 
-            <link href="public/css/paramUser.css" rel="stylesheet">
-            <link href="public/css/footerGeneral.css" rel="stylesheet">
+            <link href="css/paramUser.css" rel="stylesheet">
+            <link href="css/footerGeneral.css" rel="stylesheet">
         </head>
         <body>
             <header class='principalHeader'>
@@ -54,7 +54,7 @@ if(isset($_GET['actor'])){
                     <button type='submit' name='submitChangeUser' class='submitChangeUser'>Valider</button>
                 </form>
             </div>
-            <?php include('templates/parties/morceaux/general/footer.php');?>
+            <?php include('../templates/parties/morceaux/general/footer.php');?>
 
         </body>
     </html>

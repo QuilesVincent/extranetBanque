@@ -14,7 +14,7 @@ foreach($actors as $actor){
     ?>
     <div class="partieActeur<?= $actor['name_actor']?> partieActeurDiv">
         <div class='partieGaucheLogo'>
-            <img src="public/logo/<?= $actor['name_actor']?>.png" alt="logo de l'entité de <?php echo $actor['name_actor']?>">
+            <img src="image/logo/<?= $actor['name_actor']?>.png" alt="logo de l'entité de <?php echo $actor['name_actor']?>">
         </div>
         <div class='partieDroitePres'>
             <h3><?php echo $actor['name_actor']?></h3>

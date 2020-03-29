@@ -3,8 +3,8 @@
         <head>
             <title>Inscription/connexion</title>
             <meta charset='utf-8'>
-            <link href='public/css/connexionInscription.css' rel='stylesheet'>
-            <link href="public/css/footerGeneral.css" rel="stylesheet">
+            <link href='css/connexionInscription.css' rel='stylesheet'>
+            <link href="css/footerGeneral.css" rel="stylesheet">
             <!--Ajouter des polices google pour rendre le tout plus jolie-->
             
         </head>
@@ -16,7 +16,7 @@
                 </div>
                 <!--Affichage du formulaire de connexion -->
                 <div class='connexionFormContent'>
-                    <?php include('templates/parties/morceaux/accueil/formPageConnexion.php');?>
+                    <?php include('../templates/parties/morceaux/accueil/formPageConnexion.php');?>
                 </div>
             </header>
             <section class='inscriptionSection'>
@@ -61,6 +61,6 @@
                     </form>
                 </div>
             </section>
-        <?php include('templates/parties/morceaux/general/footer.php');?>
+        <?php include('../templates/parties/morceaux/general/footer.php');?>
         </body>
     </html>

@@ -1,7 +1,7 @@
 <?php
 
 namespace Models;
-require_once('libraries/autoload.php');
+require_once('../libraries/autoload.php');
 
 class DislikeManager extends \Models\MainModel
 {

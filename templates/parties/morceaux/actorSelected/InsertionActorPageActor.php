@@ -5,7 +5,7 @@
 
 ?>
     <div class='actorLogo'>
-        <img src='public/logo/<?php echo $actor['name_actor'];?>.png' alt='Une photo du logo de <?php echo $actor['name_actor'];?>'>
+        <img src='image/logo/<?php echo $actor['name_actor'];?>.png' alt='Une photo du logo de <?php echo $actor['name_actor'];?>'>
     </div>
     <div class='infoActeur'>
         <h2><?php echo $actor['name_actor'];?></h2>

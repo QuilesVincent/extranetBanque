@@ -1,7 +1,7 @@
 <?php
 
 namespace Controllers;
-require_once('libraries/autoload.php');
+require_once('../libraries/autoload.php');
 
 class Afficheur extends \Controllers\Controller
 {

@@ -5,16 +5,16 @@ $idUser = $_GET['user'];
 session_start();
 
 ?>
-            <link href='public/css/headerAccueil&Acteur.css' rel='stylesheet'>
-            <link href='public/css/newCom.css' rel='stylesheet'><!--Faire fichier css-->
-            <link href="public/css/footerGeneral.css" rel="stylesheet">
+            <link href='css/headerAccueil&Acteur.css' rel='stylesheet'>
+            <link href='css/newCom.css' rel='stylesheet'><!--Faire fichier css-->
+            <link href="css/footerGeneral.css" rel="stylesheet">
             <!--Ajouter des polices google pour rendre le tout plus jolie-->
             
         </head>
 
         <body>
         <!--Insertion de la partie header-->
-            <?php include('templates/parties/morceaux/general/headerAccueil&Acteur.php'); ?>
+            <?php include('../templates/parties/morceaux/general/headerAccueil&Acteur.php'); ?>
             <hr />
         <!--Insertion du formulaire pour écrire le commentaire-->
             <div class="divForm">
@@ -31,6 +31,6 @@ session_start();
 
                 </form>
             </div>
-        <?php include('templates/parties/morceaux/general/footer.php');?>
+        <?php include('../templates/parties/morceaux/general/footer.php');?>
         </body>
     </html>

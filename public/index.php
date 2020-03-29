@@ -1,9 +1,5 @@
 <?php
 
-namespace Models;
 require_once('../libraries/autoload.php');
+\Application::process();
 
-class Afficheur
-{
-    
-}

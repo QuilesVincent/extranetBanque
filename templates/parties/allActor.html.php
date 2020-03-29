@@ -9,15 +9,15 @@ if(isset($result)){
 }
 
 ?>
-            <link href='public/css/headerAccueil&Acteur.css' rel='stylesheet'>
-            <link href='public/css/accueil.css' rel='stylesheet'>
-            <link href="public/css/footerGeneral.css" rel="stylesheet">
+            <link href='css/headerAccueil&Acteur.css' rel='stylesheet'>
+            <link href='css/accueil.css' rel='stylesheet'>
+            <link href="css/footerGeneral.css" rel="stylesheet">
             <!--Ajouter des polices google pour rendre le tout plus jolie-->
             
         </head>
 
         <body>
-            <?php include('templates/parties/morceaux/general/headerAccueil&Acteur.php'); ?>
+            <?php include('../templates/parties/morceaux/general/headerAccueil&Acteur.php'); ?>
             <hr />
 
             <section class='sectionGBAF'>
@@ -28,7 +28,7 @@ if(isset($result)){
                     </p>
                 </div>
                 <div class='imageGBAFPresentationDiv'>
-                    <img src='public/logo/gbaf.png' alt='Une photo illustrant les bureau de la société GBAF' class='imgGBAFPres'>
+                    <img src='image/logo/gbaf.png' alt='Une photo illustrant les bureau de la société GBAF' class='imgGBAFPres'>
                 </div>
             </section>
             <hr />
@@ -41,11 +41,11 @@ if(isset($result)){
                     </p>
                 </div>
                 <div class='partie2Acteur'>
-                    <?php include('templates/parties/morceaux/actor/divActeurInAccueil.php');?>
+                    <?php include('../templates/parties/morceaux/actor/divActeurInAccueil.php');?>
                 </div>
             </section>
             <hr />
-            <?php include('templates/parties/morceaux/general/footer.php');?>
+            <?php include('../templates/parties/morceaux/general/footer.php');?>
 
         </body>
     </html>

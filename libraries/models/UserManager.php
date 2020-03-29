@@ -1,7 +1,8 @@
 <?php
 
 namespace Models;
-require_once('libraries/autoload.php');
+require_once('../libraries/autoload.php');
+
 class UserManager extends \Models\MainModel
 {
     protected $table = "user";

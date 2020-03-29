@@ -17,23 +17,23 @@ if(isset($_GET['like'])){
 };
 ?>
 
-            <link href='public/css/headerAccueil&Acteur.css' rel='stylesheet'>
-            <link href='public/css/acteur.css' rel='stylesheet'>
-            <link href="public/css/footerGeneral.css" rel="stylesheet">
+            <link href='css/headerAccueil&Acteur.css' rel='stylesheet'>
+            <link href='css/acteur.css' rel='stylesheet'>
+            <link href="css/footerGeneral.css" rel="stylesheet">
             <!--Ajouter des polices google pour rendre le tout plus jolie-->
             
         </head>
 
         <body>
         <!--Insertion de l'Header-->
-            <?php include('templates/parties/morceaux/general/headerAccueil&Acteur.php'); ?>
+            <?php include('../templates/parties/morceaux/general/headerAccueil&Acteur.php'); ?>
             
             <hr />
             <?= isset($error) ? $error : false;?>
             <a href='index.php?controllers=actor&task=showBackAllActor&user=<?= htmlspecialchars($_SESSION['id']);?>' class='returnAccueilLien'>Retour à la page accueil</a>
             <!--Insertion de l'acteur, logo + description-->
             <section class='sectionActeur'>
-                <?php include('templates/parties/morceaux/actorSelected/insertionActorPageActor.php');?>
+                <?php include('../templates/parties/morceaux/actorSelected/insertionActorPageActor.php');?>
             </section>
             <hr />
             <!--Insertion de la partie commentaire + like de l'acteur-->
@@ -50,18 +50,18 @@ if(isset($_GET['like'])){
                         </div>
                         <div class='divFormPostLike'> 
                             <form action='index.php?controllers=like&task=modification&actor=<?= htmlspecialchars($actor['id_actor']);?>&idUser=<?= $_SESSION['id'];?>' method='post' class='formPostLike'>
-                                <button type='submit' name='like+' class='submitLikePost submitGoodLike'><img src="public/logo/like.png"><?= $actor['like_actor'];?></button>
-                                <button type='submit' name='like-' class='submitLikePost submitBadLike'><img src="public/logo/dislike.png"><?= $actor['dislike_actor'];?></button>
+                                <button type='submit' name='like+' class='submitLikePost submitGoodLike'><img src="image/logo/like.png"><?= $actor['like_actor'];?></button>
+                                <button type='submit' name='like-' class='submitLikePost submitBadLike'><img src="image/logo/dislike.png"><?= $actor['dislike_actor'];?></button>
                             </form>
                         </div>
                     </div>
                 </header>
                 <div class='divSectionComment'>
-                    <?php include('templates/parties/morceaux/actorSelected/commentInsertion.php') ?>
+                    <?php include('../templates/parties/morceaux/actorSelected/commentInsertion.php') ?>
                 </div>
             </section>
             <hr />
-            <?php include('templates/parties/morceaux/general/footer.php');?>
+            <?php include('../templates/parties/morceaux/general/footer.php');?>
 
         </body>
     </html>

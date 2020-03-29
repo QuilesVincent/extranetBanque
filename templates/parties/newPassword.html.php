@@ -1,6 +1,6 @@
 
-            <link href='public/css/newPassword.css' rel='stylesheet'>
-            <link href="public/css/footerGeneral.css" rel="stylesheet">
+            <link href='css/newPassword.css' rel='stylesheet'>
+            <link href="css/footerGeneral.css" rel="stylesheet">
             <!--Ajouter des polices google pour rendre le tout plus jolie-->
             
         </head>
@@ -43,7 +43,7 @@
                 </div>
             </form>
         </div>
-        <?php include('templates/parties/morceaux/general/footer.php');?>
+        <?php include('../templates/parties/morceaux/general/footer.php');?>
 
         </body>
     </html>
