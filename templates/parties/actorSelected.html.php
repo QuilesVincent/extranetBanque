@@ -30,7 +30,7 @@ if(isset($_GET['like'])){
             
             <hr />
             <?= isset($error) ? $error : false;?>
-            <a href='index.php?controller=actor&task=showBackAllActor&user=<?= htmlspecialchars($_SESSION['id']);?>' class='returnAccueilLien'>Retour à la page accueil</a>
+            <a href='index.php?controllers=actor&task=showBackAllActor&user=<?= htmlspecialchars($_SESSION['id']);?>' class='returnAccueilLien'>Retour à la page accueil</a>
             <!--Insertion de l'acteur, logo + description-->
             <section class='sectionActeur'>
                 <?php include('templates/parties/morceaux/actorSelected/insertionActorPageActor.php');?>
@@ -49,7 +49,7 @@ if(isset($_GET['like'])){
                             </div>
                         </div>
                         <div class='divFormPostLike'> 
-                            <form action='index.php?controller=like&task=modification&actor=<?= htmlspecialchars($actor['id_actor']);?>&idUser=<?= $_SESSION['id'];?>' method='post' class='formPostLike'>
+                            <form action='index.php?controllers=like&task=modification&actor=<?= htmlspecialchars($actor['id_actor']);?>&idUser=<?= $_SESSION['id'];?>' method='post' class='formPostLike'>
                                 <button type='submit' name='like+' class='submitLikePost submitGoodLike'><img src="public/logo/like.png"><?= $actor['like_actor'];?></button>
                                 <button type='submit' name='like-' class='submitLikePost submitBadLike'><img src="public/logo/dislike.png"><?= $actor['dislike_actor'];?></button>
                             </form>

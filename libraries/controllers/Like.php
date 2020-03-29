@@ -36,7 +36,7 @@ class Like extends Controller
                 }
                 //if like already exist redirect with a notation get 
             } else {
-                \Http::redirect("index.php?controller=actor&task=showOneSelected&actor=" .$_GET['actor']. "&like=not");
+                \Http::redirect("index.php?controllers=actor&task=showOneSelected&actor=" .$_GET['actor']. "&like=not");
             } 
         //If user send dislike
         } else {
@@ -57,9 +57,9 @@ class Like extends Controller
                 }
                 //if dislike already exist redirect with a notation get 
             } else {
-                \Http::redirect("index.php?controller=actor&task=showOneSelected&actor=" .$_GET['actor']. "&dislike=not");
+                \Http::redirect("index.php?controllers=actor&task=showOneSelected&actor=" .$_GET['actor']. "&dislike=not");
             }
         }
-        \Http::redirect("index.php?controller=actor&task=showOneSelected&actor=" .$_GET['actor']);
+        \Http::redirect("index.php?controllers=actor&task=showOneSelected&actor=" .$_GET['actor']);
     }
 }

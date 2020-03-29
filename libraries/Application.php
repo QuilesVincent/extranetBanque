@@ -7,8 +7,8 @@ class Application
         $controllerName = "Afficheur";
         $task = "afficheAccueil";
 
-        if(!empty($_GET['controller'])){
-            $controllerName = ucfirst($_GET['controller']);
+        if(!empty($_GET['controllers'])){
+            $controllerName = ucfirst($_GET['controllers']);
         }
 
         if(!empty($_GET['task'])){

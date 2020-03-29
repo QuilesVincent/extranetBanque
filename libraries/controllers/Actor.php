@@ -40,7 +40,7 @@ class Actor extends Controller
         }
         //If previous page was paramUser
         if(isset($_POST['submitChangeUser'])){
-            //Create controller User and run modification
+            //Create controllers User and run modification
             $userController = new \Controllers\User();
             $modif = $userController->modifDonneeUser();
             //If we were on the page of one actor we come back on that

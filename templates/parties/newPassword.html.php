@@ -14,7 +14,7 @@
 
             <?= isset($_GET['errP']) ? \DatabaseFunction::writteAlert("Erreur dans les champs rentrés", "h2") : (isset($_GET['emptyField']) ? \DatabaseFunction::writteAlert("Tous les champs doivent êtres remplis", "h2") : "<h2> Changez votre mot de passe </h2>");?>
 
-            <form action='index.php?controller=user&task=modifPassword' method='post' class='NewPasswordForm'>
+            <form action='index.php?controllers=user&task=modifPassword' method='post' class='NewPasswordForm'>
 
                 <div class='userNameDiv'>
                     <!--<label for='userName' class='userNameLabel'>Tapez votre UserName</label>-->

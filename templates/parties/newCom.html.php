@@ -20,13 +20,13 @@ session_start();
             <div class="divForm">
                 <!-- Message d'erreur si nécessaire,si com vide ou déjà posté -->
                 <?= isset($_GET['comAlready']) ? \DatabaseFunction::writteAlert("Vous avez déjà posté un commentaire", "h1") : (isset($_GET['comEmpty']) ? \DatabaseFunction::writteAlert("Le commentaire ne peut être vide", "h1") : "<h1> Ecrivez le commentaire voulu </h1>");?>
-                <form action='index.php?controller=actor&task=showBack&actor=<?php echo htmlspecialchars($idActor);?>&user=<?php echo htmlspecialchars($idUser);?>' method='post'>
+                <form action='index.php?controllers=actor&task=showBack&actor=<?php echo htmlspecialchars($idActor);?>&user=<?php echo htmlspecialchars($idUser);?>' method='post'>
                     <div class="divContentComment">
                         <textarea name='contentCom'></textarea>
                     </div>
                     <div class="divSubmit">
                         <button type='submit' name='submitCom' class='submitCom'>Valider</button>
-                        <a href="index.php?controller=actor&task=showOneSelected&actor=<?php echo htmlspecialchars($idActor). "&user=".htmlspecialchars($idUser)?>">Annuler</a>
+                        <a href="index.php?controllers=actor&task=showOneSelected&actor=<?php echo htmlspecialchars($idActor). "&user=".htmlspecialchars($idUser)?>">Annuler</a>
                     </div>
 
                 </form>

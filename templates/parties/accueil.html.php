@@ -35,7 +35,7 @@
                         <h2>Inscription</h2>
                         <p>Le monde de la finance s'ouvre bientôt à vous</p>
                     </div>
-                    <form action='index.php?controller=actor&task=showAll' method='post' class='inscriptionFormContent'>
+                    <form action='index.php?controllers=actor&task=showAll' method='post' class='inscriptionFormContent'>
                         <?= empty($_GET['fieldR']) ? false : writteAlert($errorObj->missDonnee(), 'p');?>
                         <div class='firstLastNameContent'>
                             <input type='text' name='firstNameInscription' placeholder="Prénom">

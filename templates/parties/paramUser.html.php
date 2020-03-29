@@ -4,12 +4,12 @@ session_start();
 $idUser = $_GET['user'];
 $idUserSafe = htmlspecialchars($idUser);
 
-$cheminAccueil = "index.php?controller=actor&task=showBackAllActor&user=$idUserSafe";
+$cheminAccueil = "index.php?controllers=actor&task=showBackAllActor&user=$idUserSafe";
 $road = $cheminAccueil;
 
 if(isset($_GET['actor'])){
     $idActor = $_GET['actor'];
-    $cheminActor = "index.php?controller=actor&task=showOneSelected&user=$idUserSafe&actor=$idActor";
+    $cheminActor = "index.php?controllers=actor&task=showOneSelected&user=$idUserSafe&actor=$idActor";
     $road = $cheminActor;
 };
 

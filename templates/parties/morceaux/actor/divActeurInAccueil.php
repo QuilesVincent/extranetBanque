@@ -21,7 +21,7 @@ foreach($actors as $actor){
             <a href='Demander lien au mentor'></a><!--Demander lien au mentor-->
             <p><?php echo tronquer($actor['presentation_actor'],120);?></p>
             <div class="contentLien">
-            <a href="index.php?controller=actor&task=showOneSelected&actor=<?php echo htmlspecialchars($actor['id_actor']);?>&user=<?= $_SESSION['id'];?>" class='lienActeur'>Lire la suite</a>
+            <a href="index.php?controllers=actor&task=showOneSelected&actor=<?php echo htmlspecialchars($actor['id_actor']);?>&user=<?= $_SESSION['id'];?>" class='lienActeur'>Lire la suite</a>
             </div>
         </div>
     </div>

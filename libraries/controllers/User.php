@@ -48,14 +48,14 @@ class User extends \Controllers\Controller
         $password = $_POST['password'];
         //Check all field aren't empty and if empty, redirect on the page with notation get
         if(empty($userName) || empty($secretQuestion) || empty($secretQuestionAnswer) || empty($password)){
-            \Http::redirect("index.php?controller=afficheur&task=afficheResetPassword&emptyField=y");
+            \Http::redirect("index.php?controllers=afficheur&task=afficheResetPassword&emptyField=y");
         }
         //Vérification des données de l'utilisateur pur être sur qu'il existe, avant de faire les modifications
         $req = $this->model->getUserResetPass($userName, $secretQuestion, $secretQuestionAnswer);
         if(empty($req))
         {
             //If not good redirect with notation get
-            \Http::redirect("index.php?controller=afficheur&task=afficheResetPassword&errP=y");
+            \Http::redirect("index.php?controllers=afficheur&task=afficheResetPassword&errP=y");
         }
         else
         {
@@ -82,9 +82,9 @@ class User extends \Controllers\Controller
         //Check if all fields aren't empty ; if they are, redirect with notation get (attention, actor or not, refer previously);
         if (empty($newFirstName) || empty($newLastName) || empty($newUserName) || empty($newUserPassword) || empty($newSecretQuestionAnswer)) {
             if(isset($_GET['actor'])) {
-                \Http::redirect("index.php?controller=afficheur&task=afficheChangeDonneUser&actor=$actorSafe&user=$idUserSafe&field=empty");
+                \Http::redirect("index.php?controllers=afficheur&task=afficheChangeDonneUser&actor=$actorSafe&user=$idUserSafe&field=empty");
             }
-            \Http::redirect("index.php?controller=afficheur&task=afficheChangeDonneUser&user=$idUserSafe&field=empty");
+            \Http::redirect("index.php?controllers=afficheur&task=afficheChangeDonneUser&user=$idUserSafe&field=empty");
         } else {
             //Check if userName is free.
             $reqVerif = $this->model->find($newUserName, "userName");
@@ -94,9 +94,9 @@ class User extends \Controllers\Controller
             //Else, redirect with notation get (attention, actor or not, refer previously);
             } else {
                 if(isset($_GET['actor'])){
-                    \Http::redirect("index.php?controller=afficheur&task=afficheChangeDonneUser&actor=$actorSafe&user=$idUser&uname=notFree");
+                    \Http::redirect("index.php?controllers=afficheur&task=afficheChangeDonneUser&actor=$actorSafe&user=$idUser&uname=notFree");
                 }
-                \Http::redirect("index.php?controller=afficheur&task=afficheChangeDonneUser&user=$idUserSafe&uname=notFree");
+                \Http::redirect("index.php?controllers=afficheur&task=afficheChangeDonneUser&user=$idUserSafe&uname=notFree");
             }
         }
         return true;
