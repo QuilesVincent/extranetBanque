@@ -30,7 +30,7 @@
                 </div>
                 <div class='secretQuestionAnswer'>
                     <!--<label for='secretQuestionAnswer' class='labelSecretQuestionAnswser'>Réponse</label>-->
-                    <input type='text' name='secretQuestionAnswer' class='answerSecretQuestion' placeholder="Réponse à la question selectionné au dessus">
+                    <input type='text' name='secretQuestionAnswer' class='answerSecretQuestion' placeholder="Réponse à la question selectionnée au-dessus">
                 </div>
                 <div class='passwordDiv'>
                     <!--<label for='password' class='labelPassword'>Tapez votre nouveau mot de passe</label>-->
