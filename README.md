@@ -6,19 +6,19 @@ Realisation d'un extranet bancaire pour la formation full'stack développeur che
 
 Vincent Quiles
 
-#Fonctionnalité du site
+### Fonctionnalité du site
 
 * Site repertoriant différents acteurs bancaires
 * Gestion de comptes utilisateurs
 * Gestion des likes et commentaires réalisés par les utilisateurs sur les acteurs bancaires
 
 
-##Langages utilisés ?
+## Langages utilisés ?
 
 * HTML5, CSS3
 * PHP POO MVC, MYSQL
 
-##Responsive ?
+## Responsive ?
 
 Oui, site adapté aux pc, tablettes et téléphones.
 
