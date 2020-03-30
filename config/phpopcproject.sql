@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : lun. 23 mars 2020 à 12:37
+-- Généré le : lun. 30 mars 2020 à 19:31
 -- Version du serveur :  10.4.11-MariaDB
 -- Version de PHP : 7.2.27
 
@@ -41,7 +41,7 @@ CREATE TABLE `acteurpartenaire` (
 --
 
 INSERT INTO `acteurpartenaire` (`id_actor`, `name_actor`, `presentation_actor`, `like_actor`, `dislike_actor`) VALUES
-(1, 'Formation&co', 'Formation&co est une association française présente sur tout le territoire.\r\nNous proposons à des personnages issues de tout millieu de devenir entrepreneur grâce à un crédit et un accompagnement professionel et personnalisé.', 0, 0),
+(1, 'Formation&co', 'Formation&co est une association française présente sur tout le territoire.\r\nNous proposons à des personnages issues de tout millieu de devenir entrepreneur grâce à un crédit et un accompagnement professionel et personnalisé.', 1, 1),
 (2, 'Protectpeople', 'Protectpeople finance la solidarité nationale.\r\nNous appliquons le principe édifié par la sécurité sociale française en 1945 : permettre à chacun de bénéficier d\'une protection sociale.', 0, 0),
 (3, 'DSA France', 'Dsa France accélère la croissance du territoire et s\'engage avec les collectivités territoriales.\r\nNous accompagnons les entreprises dans les étapes clés de leur évolution.\r\nNotre philosophie : s\'adapter à chaque entreprise.\r\nNous les accompagnons pour voir plus grand et plus loin et proposons des solutions de financement adaptées à chaque étape de la vie des entreprises', 0, 0),
 (4, 'CDE', 'La CDE (Chambres Des Entrepreneurs) accompagne les entreprises dans leur démarches de formation.\r\nSon président est élu pour 3 ans par ses pairs, chef d\'entreprises et présidents de CDE.', 0, 0);
@@ -60,6 +60,13 @@ CREATE TABLE `comments` (
   `comment_date` date NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Déchargement des données de la table `comments`
+--
+
+INSERT INTO `comments` (`id_comment`, `id_targetActor`, `id_targetUser`, `comment_content`, `comment_date`) VALUES
+(23, 1, 37, 'Quelle est la valeur du xrp ?', '2020-03-23');
+
 -- --------------------------------------------------------
 
 --
@@ -73,6 +80,14 @@ CREATE TABLE `dislikeactor` (
   `dislike_number` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Déchargement des données de la table `dislikeactor`
+--
+
+INSERT INTO `dislikeactor` (`id_dislike`, `id_targetActorDislike`, `id_targetUserDislike`, `dislike_number`) VALUES
+(90, 1, 38, 1),
+(95, 1, 37, 1);
+
 -- --------------------------------------------------------
 
 --
@@ -85,6 +100,13 @@ CREATE TABLE `likeactor` (
   `id_targetUserLike` int(11) NOT NULL,
   `like_number` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `likeactor`
+--
+
+INSERT INTO `likeactor` (`id_like`, `id_targetActorLike`, `id_targetUserLike`, `like_number`) VALUES
+(164, 1, 39, 1);
 
 -- --------------------------------------------------------
 
@@ -101,6 +123,15 @@ CREATE TABLE `user` (
   `secretQuestion` varchar(255) NOT NULL,
   `secretQuestionAnswer` varchar(255) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `user`
+--
+
+INSERT INTO `user` (`id_user`, `lastName`, `firstName`, `userName`, `userPassword`, `secretQuestion`, `secretQuestionAnswer`) VALUES
+(38, 'po', 'po', 'po', '$2y$10$ojEmy57yNV7OH8E7V/kateR6IDww66oX/d2x76xHyrehnZQO5o8XK', '1', 'po'),
+(39, 'bob', 'bob', 'bob', '$2y$10$pID8V2UWmQcOBPjOLkJDSek5uhXpL5McgSsulFJ/GtyR6zfaPkF6q', '1', 'bob'),
+(37, 'hackerPro', 'hackerPro', 'hackerPro', '$2y$10$nctVFhCoFmRZ1Jvg5/98KOzmf1aulzFfTulHyNpMtI0g/mpTp662W', '1', 'hackerPro');
 
 --
 -- Index pour les tables déchargées
@@ -150,25 +181,25 @@ ALTER TABLE `acteurpartenaire`
 -- AUTO_INCREMENT pour la table `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `id_comment` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id_comment` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT pour la table `dislikeactor`
 --
 ALTER TABLE `dislikeactor`
-  MODIFY `id_dislike` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=83;
+  MODIFY `id_dislike` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
 
 --
 -- AUTO_INCREMENT pour la table `likeactor`
 --
 ALTER TABLE `likeactor`
-  MODIFY `id_like` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=152;
+  MODIFY `id_like` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=165;
 
 --
 -- AUTO_INCREMENT pour la table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
