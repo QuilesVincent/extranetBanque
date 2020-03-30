@@ -1,6 +1,10 @@
 <?php
 
-session_start();
+//If not session, redirect
+if(empty($_SESSION['connect'])) {
+    \Http::redirect('index.php');
+}
+
 $idUser = $_GET['user'];
 $idUserSafe = htmlspecialchars($idUser);
 

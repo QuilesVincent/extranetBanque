@@ -34,7 +34,7 @@ class User extends \Controllers\Controller
             empty($result) ? \Http::redirect('index.php?errConnexion=y') : '';
         } else {
             //If not post connexion or inscription, it's a (retour en arrière), so create variable result with get
-            $result = $this->model->find($_GET['user'], 'id_user');
+            $result = $this->model->find($_SESSION['id'], 'id_user');
         }
         //Return the informations
         return $result;

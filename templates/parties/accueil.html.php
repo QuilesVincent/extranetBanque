@@ -5,7 +5,6 @@
             <meta charset='utf-8'>
             <link href='css/connexionInscription.css' rel='stylesheet'>
             <link href="css/footerGeneral.css" rel="stylesheet">
-            <!--Ajouter des polices google pour rendre le tout plus jolie-->
             
         </head>
 

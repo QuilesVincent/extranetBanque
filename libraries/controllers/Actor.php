@@ -23,6 +23,7 @@ class Actor extends Controller
         $result = $controllerUser->connexion();
         //If result, search all actor and renderer with array of variable and require the page with all actors
         if($result) {
+            $_SESSION['connect'] = 'yes';
             $pageTitle = "Actor";
             $actors = $this->model->findAll();
             \Renderer::render('parties/allActor', compact("result", "pageTitle", "actors"));
@@ -67,7 +68,7 @@ class Actor extends Controller
         $commentModel = new \Models\CommentManager();
 
         //check get actor
-        if(!empty($_GET['actor']) /*&& ctype_digit($_GET['actor'])*/){
+        if(!empty($_GET['actor'])){
             $actorId = $_GET['actor'];
         }
         //search one actor with his id

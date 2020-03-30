@@ -1,6 +1,9 @@
 <?php
-session_start();
 
+//If not session, redirect
+if(empty($_SESSION['connect'])) {
+    \Http::redirect('index.php');
+}
 
 //Result is sent when the user changed his informations
 if(isset($result)){
@@ -45,7 +48,7 @@ if(isset($_GET['like'])){
                     <div class='buttonLien'>
                         <div class='lienNewCom'>
                             <div class='aLienNewCom'>
-                                <a href='index.php?controlleur=afficheur&task=afficheNewCom&actor=<?php echo htmlspecialchars($actor['id_actor']);?>&user=<?= htmlspecialchars($_SESSION['id']);?>'>Nouveau Commentaire</a>
+                                <a href='index.php?controllers=afficheur&task=afficheNewCom&actor=<?php echo htmlspecialchars($actor['id_actor']);?>&user=<?= htmlspecialchars($_SESSION['id']);?>'>Nouveau Commentaire</a>
                             </div>
                         </div>
                         <div class='divFormPostLike'> 

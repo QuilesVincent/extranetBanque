@@ -1,11 +1,15 @@
 <?php
+//If not session, redirect
+if(empty($_SESSION['connect'])) {
+    \Http::redirect('index.php');
+}
 
-session_start();
 if(isset($result)){
     $_SESSION['userName'] = $result['userName'];
     $_SESSION['lastName'] = $result['lastName'];
     $_SESSION['firstName'] = $result['firstName'];
     $_SESSION['id'] = $result['id_user'];
+    $_SESSION['connect'] = "yes";
 }
 
 ?>

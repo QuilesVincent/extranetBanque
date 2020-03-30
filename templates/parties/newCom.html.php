@@ -1,8 +1,12 @@
 <?php
 
+//If not session, redirect
+if(empty($_SESSION['connect'])) {
+    \Http::redirect('index.php');
+}
+
 $idActor = $_GET['actor'];
 $idUser = $_GET['user'];
-session_start();
 
 ?>
             <link href='css/headerAccueil&Acteur.css' rel='stylesheet'>
