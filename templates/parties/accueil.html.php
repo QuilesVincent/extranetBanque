@@ -23,7 +23,7 @@
                     <div class='partieEsthetiqueContent'>
                         <h2>Une solution pour trouver le service qui vous correspond</h2>
                         <p>Pour gagner vraiment de l'argent, il faut effectuer les recherches et trouver
-                            les bon placements. Pour conserver toutes la feignantise de vos clients, voici un un site vous permettant
+                            les bons placements. Pour conserver toute la satisfaction de vos clients, voici un site vous permettant
                             d'effectuer le travail à leur place
                         </p>
                     </div>  
@@ -53,7 +53,7 @@
                             <option value='4'>Quel est le nom de votre entrepreneur préféré</option>
                         </select>
                         <div class="answerSecretQuestionContent">
-                            <input type='text' name='answerSecretQuestion' class='answerSecretQuestion' placeholder="Réponse à la question selectionné au dessus">
+                            <input type='text' name='answerSecretQuestion' class='answerSecretQuestion' placeholder="Réponse à la question selectionnée au-dessus">
                         </div>
                         <button type='submit' name='submitInscription' class='submitInscription'>Inscription</button>
 

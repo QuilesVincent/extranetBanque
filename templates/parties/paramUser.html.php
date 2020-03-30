@@ -53,7 +53,7 @@ if(isset($_GET['actor'])){
                     </select>
                     </div>
                     <div class="secretQuestionAnswerContent">
-                        <input type='text' name='secretQuestionAnswerChangeUser' class='answerSecretQuestionChangeUser inputForm' placeholder="Nouvelle réponse à la question selectionné au dessus">
+                        <input type='text' name='secretQuestionAnswerChangeUser' class='answerSecretQuestionChangeUser inputForm' placeholder="Nouvelle réponse à la question selectionnéé au-dessus">
                     </div>
                     <button type='submit' name='submitChangeUser' class='submitChangeUser'>Valider</button>
                 </form>
