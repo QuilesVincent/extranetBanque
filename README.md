@@ -26,6 +26,7 @@ Oui, site adapté aux pc, tablettes et téléphones.
 
 * Espace administrateur pour gérer les commentaires et acteurs
 * Ordre d'affichage des acteurs sur la page (accueil/acteur) en fonction des likes
+*Ajout de page de contact et mentions légales
 
 ### Copyright
 
