@@ -6,8 +6,8 @@
 }
 .imgGBAFPres{
     margin: auto;
-    height: 250px;
-    width: 350px;
+    max-height: 250px;
+    max-width: 350px;
 }
 /*Partie acteur*/
 .partie2Acteur{
@@ -15,26 +15,35 @@
     flex-direction: column;
 }
 .partieActeurDiv{
+    height: 130px;
+    width: 100%;
     border: 1px solid grey;
     border-radius : 5px;
     margin-top: 1%;
     display: flex;
     background-color : rgba(111,111,111,0.250);
+
 }
-.partieGaucheLogo{
+.partieGaucheLogo {
     width: 23%;
-    margin-left: 1%;
+    height: 99%;
 }
-.partieGaucheLogo img{
-    width: 80%;
-    height: 65%;
-    margin-top: 6%;
+.contenerImage {
+    height: 100%;
+    margin-left : 3%;
+    display: flex;
+    align-items: center;
+}
+.contenerImage img {
+    max-width: 80%;
+    max-height: 100%;
 }
 .partieDroitePres{
+    width: 77%;
     display: flex;
     flex-direction: column;
     margin-left: 2%;
-    width: 77%;
+
 }
 .contentLien{
     width: 13%;
@@ -62,6 +71,13 @@
         margin: auto;
         width: 80%;
     }
+    .partieActeurDiv {
+        height: 140px;
+    }
+    .contenerImage img {
+        max-width: 100%;
+        max-height: 80%;
+    }
     .contentLien{
         width: 16%;
     }
@@ -73,16 +89,17 @@
         width: 80%;
     }
     .partieActeurDiv{
+        height: 270px;
         display: flex;
         flex-direction: column;
     }
     .partieGaucheLogo{
-        width : 95%;
-        margin: auto;
+        width : 100%;
     }
-    .partieGaucheLogo img{
+    .contenerImage {
         width: 100%;
-        border: 1px solid green;
+        margin: 0;
+        justify-content: center;
     }
     .partieDroitePres{
         width: 95%;
@@ -90,6 +107,7 @@
     }
     .contentLien{
         width: 20%;
+        align-self: center;
     }
 
 

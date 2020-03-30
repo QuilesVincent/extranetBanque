@@ -27,9 +27,9 @@ if(isset($result)){
             <section class='sectionGBAF'>
                 <div class='textGBAFPres'>
                     <h1>Le GBAF</h1>
-                    <p>Le GBAF est donc une entité commerciale balablabalbalablabalbalblabalabalalbalablabalablablababablba balablabalbalablabalbalblabalabalalbalablabalablablababablba balablabalbalablabalbalblabalabalalbalablabalablablababablba
-                        balablabalbalablabalbalblabalabalalbalablabalablablababablba balablabalbalablabalbalblabalabalalbalablabalablablababablba balablabalbalablabalbalblabalabalalbalablabalablablababablba
-                    </p>
+                    <p>Le GBAF est une entitée regroupant différents acteurs bancaire. Tout d'abord créé pour regrouper différents acteurs bancaire, le GBAF a ensuite décidé de devenir
+                    une réelle associations pour répondre aux questionnements des consommateurs. En effet le GBAF permet maintenant de se renseigner plus facilement sur les services bancaires proposés par
+                    les acteur bancaire du GBAF</p>
                 </div>
                 <div class='imageGBAFPresentationDiv'>
                     <img src='image/logo/gbaf.png' alt='Une photo illustrant les bureau de la société GBAF' class='imgGBAFPres'>

@@ -10,9 +10,12 @@
     margin-left: 1%;
 }
 .img{
-    background: url("../image/logo/gbafMiniature.png") no-repeat;
     width: 76px;
     height: 97px;
+}
+.img img {
+    max-height: 100%;
+    max-width: 100%;
 }
 .infoUser{
     margin-right: 2%;

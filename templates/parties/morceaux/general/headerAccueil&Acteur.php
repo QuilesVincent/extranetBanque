@@ -12,7 +12,7 @@ if(isset($_GET["actor"])){
 <header class="headerMultiPage">
     <div class='containHeader'>
         <div class='logoHeader'>
-            <div class="img">
+            <div class="img"><img src="image/logo/gbafMiniature.png">
             </div>
         </div>
         <div class='infoUser'>
