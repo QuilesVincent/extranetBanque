@@ -1,33 +1,33 @@
-dextranetBanque
+# extranetBanque
 
-Realisation d'un site extranet pour acteurs bancaires
+Realisation d'un extranet bancaire pour la formation full'stack développeur chez OpenClassrooms 
 
-Overview
-
-This project is a site with fews banks actors.
-
-Users can see informations on fews banks actors. They can like or dislike, comment on one actor.
-
-
-Summary
-
-Download
-Open-Source
-Creator
-Copyright
-Support on Beerpay
-
-Download
-Latest Release
-
-git clone https://github.com/QuilesVincent/extranetBanque.git
-
-Creator
+### Créateur
 
 Vincent Quiles
 
+#Fonctionnalité du site
 
-Copyright
+* Site repertoriant différents acteurs bancaires
+* Gestion de comptes utilisateurs
+* Gestion des likes et commentaires réalisés par les utilisateurs sur les acteurs bancaires
+
+
+##Langages utilisés ?
+
+* HTML5, CSS3
+* PHP POO MVC, MYSQL
+
+##Responsive ?
+
+Oui, site adapté aux pc, tablettes et téléphones.
+
+### À venir
+
+* Espace administrateur pour gérer les commentaires et acteurs
+* Ordre d'affichage des acteurs sur la page (accueil/acteur) en fonction des likes
+
+### Copyright
 
 Code released under the MIT License
 
