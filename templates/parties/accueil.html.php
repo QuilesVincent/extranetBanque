@@ -11,16 +11,57 @@
         <body>
             <header>
                 <div class='titleName'>
-                    <h1>GBAF</h1>
+                    
+                    <div class="img_contener">
+                        <img src="image/logo/gbafMiniature.png">
+                    </div>
                 </div>
                 <!--Affichage du formulaire de connexion -->
                 <div class='connexionFormContent'>
-                    <?php include('../templates/parties/morceaux/accueil/formPageConnexion.php');?>
+                <?php
+//Affichage d'un type de formulaire en fonction de mauvais mdp (ou username) renseigné
+if(empty($_GET['errConnexion']))
+                    {?>
+                    <form action='index.php?controllers=actor&task=showAll' method='post' class='connexionForm'>
+                        <div class='mailConnexionContent'> <!-- variable class à changer par userName au lie de mail-->
+                            <label for='userNameConnexion'>UserName</label>
+                            <input type='text' name='userNameConnexion' id='inputUserNameConnexion'>
+                        </div>
+                        <div class='passwordConnexionContent'>
+                            <label for='passwordConnexion'>Mot de passe</label>
+                            <input type='password' name='passwordConnexion' id='inputPasswordConnexion'>
+                            <a href='index.php?controllers=afficheur&task=afficheResetPassword'>Mot de passe oublié ?</a>
+                        </div>
+                        <div class='buttonConnexionContent'>
+                            <input type='submit' name='submitConnexion' value='connexion'></button>
+                        </div>
+                    </form>
+                    <?php
+                    }
+                    else
+                    {?>
+                    <form action="index.php?controllers=actor&task=showAll" method='post' class='connexionForm'>
+                        <div class='mailConnexionContent'> <!-- variable class à changer par userName au lie de mail-->
+                            <label for='userNameConnexion'>UserName</label>
+                            <input type='text' name='userNameConnexion' id='inputUserNameConnexion' placeholder="Erreurs d'identifiants">
+                        </div>
+                        <div class='passwordConnexionContent'>
+                            <label for='passwordConnexion'>Mot de passe</label>
+                            <input type='password' name='passwordConnexion' id='inputPasswordConnexion'>
+                            <a href='index.php?controllers=afficheur&task=afficheResetPassword'>Mot de passe oublié ?</a>
+                        </div>
+                        <div class='buttonConnexionContent'>
+                            <input type='submit' name='submitConnexion' value='connexion'></button>
+                        </div>
+                    </form>
+                    <?php
+                    }?>
                 </div>
             </header>
             <section class='inscriptionSection'>
                 <div class='partieEsthetique'>
                     <div class='partieEsthetiqueContent'>
+                        <h1>LE GBAF</h1>
                         <h2>Une solution pour trouver le service qui vous correspond</h2>
                         <p>Pour gagner vraiment de l'argent, il faut effectuer les recherches et trouver
                             les bons placements. Pour conserver toute la satisfaction de vos clients, voici un site vous permettant
@@ -28,37 +69,7 @@
                         </p>
                     </div>  
                 </div>
-                <!--Affichage du formulaire d'inscription -->
-                <div class='informationInscription'>
-                    <div class='titleInscription'>
-                        <h2>Inscription</h2>
-                        <p>Le monde de la finance s'ouvre bientôt à vous</p>
-                    </div>
-                    <form action='index.php?controllers=actor&task=showAll' method='post' class='inscriptionFormContent'>
-                        <?= empty($_GET['fieldR']) ? false : \DatabaseFunction::writteAlert('Tous les champs doivent êtres remplis', 'h3');?>
-                        <div class='firstLastNameContent'>
-                            <input type='text' name='firstNameInscription' placeholder="Prénom">
-                            <input type='text' name='lastNameInscription' placeholder="Nom">
-                        </div>
-                        <div class='userNameInscriptionContent'>
-                            <?= empty($_GET['userName']) ? false : \DatabaseFunction::writteAlert('UserName non disponible', 'h3'); ?>
-                                <input type='text' name='userNameInscription' placeholder='UserName' class='userNameInscription'>
-
-                        </div>
-                        <input type='password' name='passwordInscription' placeholder="Mot de passe" class='passwordInscription'>
-                        <select class='secretQuestion' name='secretQuestion'>
-                            <option value='1'>Quelle est le nom de jeune fille de votre mère ?</option>
-                            <option value='2'>Quel est le prénom de votre animal de compagnie ?</option>
-                            <option value='3'>Quel est le nom de votre hacker préféré ?</option>
-                            <option value='4'>Quel est le nom de votre entrepreneur préféré</option>
-                        </select>
-                        <div class="answerSecretQuestionContent">
-                            <input type='text' name='answerSecretQuestion' class='answerSecretQuestion' placeholder="Réponse à la question selectionnée au-dessus">
-                        </div>
-                        <button type='submit' name='submitInscription' class='submitInscription'>Inscription</button>
-
-                    </form>
-                </div>
+              
             </section>
         <?php include('../templates/parties/morceaux/general/footer.php');?>
         </body>

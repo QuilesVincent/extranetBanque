@@ -23,6 +23,11 @@ class Afficheur extends \Controllers\Controller
         $pageTitle = "Changement d'information de compte utilisateur";
         \Renderer::render('parties/paramUser', compact("pageTitle"));
     }
+    public function afficheChangeDonneUserPremiereConnexion()
+    {
+        $pageTitle = "première connexion";
+        \Renderer::render('parties/paramUserPremiereConnexion', compact("pageTitle"));
+    }
 
     public function afficheResetPassword()
     {

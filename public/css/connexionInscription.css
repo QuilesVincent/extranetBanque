@@ -8,7 +8,12 @@ header{
 }
 .titleName{
     width: 40%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.img_contener img {
+    max-width: 100%;
+    max-height: 100%;
 }
 .connexionFormContent{
     width : 60%;
@@ -90,6 +95,22 @@ Partie principale, léger descriptif texte à gauche et formulaire d'inscription
     padding: 0;
     margin: 0;
     color: red;
+}
+
+@media all and (max-width: 680px) {
+    header {
+        flex-direction : column;
+        align-items: center;
+        margin-bottom : 15px;
+    }
+    .connexionFormContent {
+        justify-content: center;
+
+    }
+    .connexionForm {
+        flex-direction: column;
+    }
+
 }
 
 

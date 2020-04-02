@@ -15,12 +15,13 @@ class Actor extends Controller
         $this->userModel = new $this->userModelName();
     }
 
+
     public function showAll()
     {
 
         $controllerUser = new \Controllers\User();
         //Try to connect user
-        $result = $controllerUser->connexion();
+        $result = $controllerUser->connexionLogin();
         //If result, search all actor and renderer with array of variable and require the page with all actors
         if($result) {
             $_SESSION['connect'] = 'yes';
@@ -39,10 +40,12 @@ class Actor extends Controller
             //we are only on the page of one actor, we can't to be on the page with all actors
             $this->showOneSelected();
         }
+
+        //Create controllers User and run modification
+        $userController = new \Controllers\User();
+
         //If previous page was paramUser
         if(isset($_POST['submitChangeUser'])){
-            //Create controllers User and run modification
-            $userController = new \Controllers\User();
             $modif = $userController->modifDonneeUser();
             //If we were on the page of one actor we come back on that
             if(isset($_GET['actor'])) {
@@ -51,6 +54,13 @@ class Actor extends Controller
             } else {
                 $this->showAll();
             }
+        }
+        
+        //If previous page was paramUserFirstConnexion
+        if(isset($_POST['submitChangeUserFirstConnexion'])){
+            $modif = $userController->modifDonneeUserFirstConnexion();
+            //Go on the page with all actor
+            $this->showAll();
         }
         
     }

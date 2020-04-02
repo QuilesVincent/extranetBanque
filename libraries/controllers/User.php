@@ -11,34 +11,31 @@ class User extends \Controllers\Controller
         parent::__construct();
     }
 
-    public function connexion()
+    public function connexionLogin()
     {
-        //if post inscription check if all field aren't empty ; if empty redirect accueil with notation field is empty
-        if(isset($_POST['submitInscription'])){
-            if (empty($_POST['lastNameInscription']) || empty($_POST['firstNameInscription']) || empty($_POST['userNameInscription']) || empty($_POST['passwordInscription']) || empty($_POST['secretQuestion']) || empty($_POST['answerSecretQuestion'])) {
-                \Http::redirect('index.php?fieldR=y');
-            }
-            //check userName is free ? adding : redirect with notation userName no free
-            $verif = $this->model->find($_POST['userNameInscription'], 'userName');
-            if(empty($verif)) {
-                $add = $this->model->addUser($_POST['lastNameInscription'], $_POST['firstNameInscription'], $_POST['userNameInscription'], $_POST['passwordInscription'], $_POST['secretQuestion'], $_POST['answerSecretQuestion']);
-                $result = $this->model->getUser($_POST['userNameInscription'], $_POST['passwordInscription']);
-            } else {
-                \Http::redirect('index.php?userName=no');
-            }
-            //if connexion, check with user post connexion
-        } elseif(isset($_POST['submitConnexion'])) {
+        if(isset($_POST['userNameConnexion']) && isset($_POST['passwordConnexion'])) {
             //check information
             $result = $this->model->getUser($_POST['userNameConnexion'], $_POST['passwordConnexion']);
             //If not found, not good paswword or username, so redirect
-            empty($result) ? \Http::redirect('index.php?errConnexion=y') : '';
+            if(empty($result)){
+                \Http::redirect('index.php?errConnexion=y');
+            } else {
+                $_SESSION['connect'] = "yes";
+                $_SESSION['id_user'] = $result['id_user'];
+                $_SESSION['userName'] = $_POST['userNameConnexion'];
+                if(empty($result['lastName'])) {
+                    $pageTitle = 'première connexion';
+                    \Renderer::render('parties/paramUserPremiereConnexion', compact('result', 'pageTitle'));
+                } else {
+                    return $result;
+                }
+            }
         } else {
-            //If not post connexion or inscription, it's a (retour en arrière), so create variable result with get
-            $result = $this->model->find($_SESSION['id'], 'id_user');
+            $result = $this->model->find($_SESSION['id_user'], "id_user");
+            return $result;
         }
-        //Return the informations
-        return $result;
     }
+
 
     public function modifPassword()
     {
@@ -65,6 +62,34 @@ class User extends \Controllers\Controller
         }
     }
 
+
+    public function modifDonneeUserFirstConnexion()
+    {
+        $newUserName = $_POST['userNameChangeUser'];
+        $newFirstName = $_POST['firstNameChangeUser'];
+        $newLastName = $_POST['lastNameChangeUser'];
+        $newUserPassword = $_POST['passwordChangeUser'];
+        $newSecretQuestion = $_POST['secretQuestionChangeUser'];
+        $newSecretQuestionAnswer = $_POST['secretQuestionAnswerChangeUser'];
+        $idUser = $_SESSION['id_user'];
+        $idUserSafe = htmlspecialchars($idUser);
+        
+        //Check if all fields aren't empty ; if they are, redirect with notation get (attention, actor or not, refer previously);
+        if (empty($newFirstName) || empty($newLastName) || empty($newUserName) || empty($newUserPassword) || empty($newSecretQuestionAnswer)) {
+            \Http::redirect("index.php?controllers=afficheur&task=afficheChangeDonneUserPremiereConnexion&user=$idUserSafe&field=empty");
+            } else {
+            //Check if userName is free.
+            $reqVerif = $this->model->find($newUserName, "userName");
+            //If he is free, do
+            if(empty($reqVerif) || $reqVerif['userName'] === $_SESSION['userName']) {
+                $this->model->modificationUserInformation($newLastName, $newFirstName, $newUserName, $newUserPassword, $newSecretQuestion, $newSecretQuestionAnswer, $idUserSafe);
+            //Else, redirect with notation get (attention, actor or not, refer previously);
+            } else {
+                \Http::redirect("index.php?controllers=afficheur&task=afficheChangeDonneUserPremiereConnexion&user=$idUserSafe&uname=notFree");
+            }
+        }
+    }
+
     public function modifDonneeUser()
     {
         $newUserName = $_POST['userNameChangeUser'];
@@ -73,8 +98,13 @@ class User extends \Controllers\Controller
         $newUserPassword = $_POST['passwordChangeUser'];
         $newSecretQuestion = $_POST['secretQuestionChangeUser'];
         $newSecretQuestionAnswer = $_POST['secretQuestionAnswerChangeUser'];
-        $idUser = $_GET['user'];
-        $idUserSafe = htmlspecialchars($_GET['user']);
+        if(isset($_GET['user'])){
+            $idUser = $_GET['user'];
+        } else {
+            $idUser = $_SESSION['id_user'];
+        }
+        
+        $idUserSafe = htmlspecialchars($idUser);
         //Check if previous page is an actor selected to choose the redirection after execute program
         if(isset($_GET['actor'])){
             $actorSafe = htmlspecialchars($_GET['actor']);
@@ -99,8 +129,55 @@ class User extends \Controllers\Controller
                 \Http::redirect("index.php?controllers=afficheur&task=afficheChangeDonneUser&user=$idUserSafe&uname=notFree");
             }
         }
-        return true;
     }
+
+    /*
+    public function modifDonneeUser()
+    {
+        $newUserName = $_POST['userNameChangeUser'];
+        $newFirstName = $_POST['firstNameChangeUser'];
+        $newLastName = $_POST['lastNameChangeUser'];
+        $newUserPassword = $_POST['passwordChangeUser'];
+        $newSecretQuestion = $_POST['secretQuestionChangeUser'];
+        $newSecretQuestionAnswer = $_POST['secretQuestionAnswerChangeUser'];
+        if(isset($_GET['user'])){
+            $idUser = $_GET['user'];
+        } else {
+            $idUser = $_SESSION['id_user'];
+        }
+        
+        $idUserSafe = htmlspecialchars($_GET['user']);
+        //Check if previous page is an actor selected to choose the redirection after execute program
+        if(isset($_GET['actor'])){
+            $actorSafe = htmlspecialchars($_GET['actor']);
+        };
+        //Check if all fields aren't empty ; if they are, redirect with notation get (attention, actor or not, refer previously);
+        if (empty($newFirstName) || empty($newLastName) || empty($newUserName) || empty($newUserPassword) || empty($newSecretQuestionAnswer)) {
+            if(isset($_GET['actor'])) {
+                \Http::redirect("index.php?controllers=afficheur&task=afficheChangeDonneUser&actor=$actorSafe&user=$idUserSafe&field=empty");
+            }
+            if($pageTitle === "première connexion"){
+                \Http::redirect("index.php?controllers=afficheur&task=afficheChangeDonneUserPremiereConnexion&user=$idUserSafe&field=empty");
+            }
+            \Http::redirect("index.php?controllers=afficheur&task=afficheChangeDonneUser&user=$idUserSafe&field=empty");
+        } else {
+            //Check if userName is free.
+            $reqVerif = $this->model->find($newUserName, "userName");
+            //If he is free, do
+            if(empty($reqVerif) || $reqVerif['userName'] === $_SESSION['userName']) {
+                $this->model->modificationUserInformation($newLastName, $newFirstName, $newUserName, $newUserPassword, $newSecretQuestion, $newSecretQuestionAnswer, $idUserSafe);
+            //Else, redirect with notation get (attention, actor or not, refer previously);
+            } else {
+                if(isset($_GET['actor'])){
+                    \Http::redirect("index.php?controllers=afficheur&task=afficheChangeDonneUser&actor=$actorSafe&user=$idUser&uname=notFree");
+                }
+                if($pageTitle === "première connexion"){
+                    \Http::redirect("index.php?controllers=afficheur&task=afficheChangeDonneUserPremiereConnexion&user=$idUserSafe&field=empty");
+                }
+                \Http::redirect("index.php?controllers=afficheur&task=afficheChangeDonneUser&user=$idUserSafe&uname=notFree");
+            }
+        }
+    }*/
 
     public function logOut()
     {

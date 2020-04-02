@@ -34,6 +34,22 @@ class UserManager extends \Models\MainModel
     }
 
     //Function pour ajouter un user
+    public function verifUserFirstConnexion(string $lastName, string $firstName, string  $userName, string $password, int $secretQuestion, string $secretQuestionAnswer, int $idUser): void
+    {
+        $passwordCrypt = password_hash($password, PASSWORD_DEFAULT);
+        $req = $this->pdo->prepare('UPDATE user SET lastName = :lastName, firstName = :firstName, userName = :userName, userPassword = :userPassword, secretQuestion = :secretQuestion, secretQuestionAnswer = :secretQuestionAnswer WHERE id_user = :idUser');
+        $req->bindValue(':lastName',$lastName, \PDO::PARAM_STR);
+        $req->bindValue(':firstName',$firstName, \PDO::PARAM_STR);
+        $req->bindValue(':userName',$userName, \PDO::PARAM_STR);
+        $req->bindValue(':userPassword',$passwordCrypt, \PDO::PARAM_STR);
+        $req->bindValue(':secretQuestion',$secretQuestion, \PDO::PARAM_STR);
+        $req->bindValue(':secretQuestionAswer',$secretQuestionAnswer, \PDO::PARAM_STR);
+        $req->bindValue(':idUser', $idUser, \PDO::PARAM_INT);
+
+        $req->execute();
+    }
+
+    //Function pour ajouter un user
     public function addUser(string $lastName, string $firstName, string  $userName, string $password, int $secretQuestion, string $secretQuestionAnswer): void
     {
         $passwordCrypt = password_hash($password, PASSWORD_DEFAULT);
