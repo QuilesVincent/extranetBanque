@@ -60,7 +60,7 @@ class User extends \Controllers\Controller
         else
         {
             //If good, redirect on the accueil with success message
-            $reqPass = $this->model->modificationUserPassword($userName,$secretQuestionAnswer, $password);
+            $this->model->modificationUserPassword($userName,$secretQuestionAnswer, $password);
             \Http::redirect("index.php?modifP=y");;
         }
     }
@@ -89,8 +89,8 @@ class User extends \Controllers\Controller
             //Check if userName is free.
             $reqVerif = $this->model->find($newUserName, "userName");
             //If he is free, do
-            if(empty($reqVerif)) {
-                $req = $this->model->modificationUserInformation($newLastName, $newFirstName, $newUserName, $newUserPassword, $newSecretQuestion, $newSecretQuestionAnswer, $idUserSafe);
+            if(empty($reqVerif) || $reqVerif['userName'] === $_SESSION['userName']) {
+                $this->model->modificationUserInformation($newLastName, $newFirstName, $newUserName, $newUserPassword, $newSecretQuestion, $newSecretQuestionAnswer, $idUserSafe);
             //Else, redirect with notation get (attention, actor or not, refer previously);
             } else {
                 if(isset($_GET['actor'])){

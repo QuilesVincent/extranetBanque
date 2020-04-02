@@ -35,13 +35,13 @@
                         <p>Le monde de la finance s'ouvre bientôt à vous</p>
                     </div>
                     <form action='index.php?controllers=actor&task=showAll' method='post' class='inscriptionFormContent'>
-                        <?= empty($_GET['fieldR']) ? false : writteAlert($errorObj->missDonnee(), 'p');?>
+                        <?= empty($_GET['fieldR']) ? false : \DatabaseFunction::writteAlert('Tous les champs doivent êtres remplis', 'h3');?>
                         <div class='firstLastNameContent'>
                             <input type='text' name='firstNameInscription' placeholder="Prénom">
                             <input type='text' name='lastNameInscription' placeholder="Nom">
                         </div>
                         <div class='userNameInscriptionContent'>
-                            <?= empty($_GET['userName']) ? false : writteAlert($errorObj->userNameNoFree(), 'p'); ?>
+                            <?= empty($_GET['userName']) ? false : \DatabaseFunction::writteAlert('UserName non disponible', 'h3'); ?>
                                 <input type='text' name='userNameInscription' placeholder='UserName' class='userNameInscription'>
 
                         </div>
